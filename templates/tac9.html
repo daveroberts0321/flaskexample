@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block bodyblock %}
+<div class="columns">
+  <div class="column is-one-third">
+    
+    <ul>
+        <h4>30 Day Sales Totals</h4>
+        <li>TAC9 Black : {{avblk9}} </li>
+        <li>TAC9 FDE : {{avfde9}}</li>
+        <li>TAC9 Rifle : {{avrif9}}</li>
+        <li>TAC9 Stealth : {{avstl9}}</li>
+        <li>TAC9 Other : {{avoth9}}</li>
+    </ul>
+  </div>
+  <div class="column">
+    <ul>
+        <h4>30 Day Daily Sales Average</h4>
+        <li>Black : {{monavblk9}}</li>
+        <li>FDE : {{monavfde9}}</li>
+        <li>Rifle : {{monavrif9}}</li>
+        <li>Stealth : {{monavstl9}}</li>
+        <li>Other : {{monavoth9}}</li>
+    </ul>
+  </div>  
+    
+
+</div>
+
+{% endblock %}

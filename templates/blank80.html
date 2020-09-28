@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block bodyblock %}
+<div class="columns">
+  <div class="column is-one-third">
+    
+    <ul>
+        <h4>30 Day Sales Totals</h4>
+        <li>80 Black : {{avblk80}} </li>
+        <li>80 FDE : {{avfde80}}</li>
+        <li>80 Rifle : {{avrif80}}</li>
+        <li>80 Stealth : {{avstl80}}</li>
+        <li>80 Other : {{avoth80}}</li>
+        <li>80 Jigs : {{avjig80}}</li>
+        <li>80 Drill Bits : {{avdrill80}}</li>
+    </ul>
+  </div>
+  <div class="column">
+    <ul>
+        <h4>30 Day Daily Sales Average</h4>
+        <li>Black : {{monavblk80}}</li>
+        <li>FDE : {{monavfde80}}</li>
+        <li>Rifle : {{monavrif80}}</li>
+        <li>Stealth : {{monavstl80}}</li>
+        <li>Other : {{monavoth80}}</li>
+        <li>Jigs : {{monavjig80}}</li>
+        <li>Drill Bits : {{monavdrill80}}</li>
+    </ul>
+  </div>  
+    
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block bodyblock %}
+<div class="columns">
+  <div class="column is-one-third">
+    
+    <ul>
+        <h4>30 Day Sales Totals</h4>
+        <li>AR15 Black : {{averageblk15}} </li>
+        <li>AR15 FDE : {{averagefde15}}</li>
+        <li>AR15 OD : {{averageod15}}</li>
+        <li>AR15 Rifle : {{averagerif15}}</li>
+        <li>AR15 Stealth : {{averagestl15}}</li>
+        <li>AR15 Clear: {{averageclr15}}</li>
+        <li>Ar15 Other : {{averageoth15}}</li>
+    </ul>
+  </div>
+  <div class="column">
+    <ul>
+        <h4>30 Day Daily Sales Average</h4>
+        <li>Black : {{monaverageblk15}}</li>
+        <li>FDE : {{monaveragefde15}}</li>
+        <li>OD : {{monaverageod15}}</li>
+        <li>Rifle : {{monaveragerif15}}</li>
+        <li>Stealth : {{monaveragestl15}}</li>
+        <li>Clear : {{monaverageclr15}}</li>
+        <li>Other : {{monaverageoth15}}</li>
+    </ul>
+    </div>
+  
+</div>
+
+{% endblock %}
