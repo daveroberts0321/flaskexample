@@ -181,6 +181,22 @@ def consumables():
   return render_template('consumables.html',sernum30=sernum30, brass30=brass30, tac9arm30=tac9arm30, tac9ej30=tac9ej30, tac9but30=tac9but30,
                           kit1530=kit1530, buffer1530=buffer1530, kit30830=kit30830, buffer30830=buffer30830, buffer930=buffer930)
 
+@app.route('/salessplits')
+def salessplits():
+  #variables
+  ar15sales= a30+b30+c30+d30+e30+f30+g30
+  ar308sales= h30+i30+j30+k30+l30+m30
+  tac9sales= n30+o30+p30+q30+r30
+  blank80= s30+t30+u30+v30+w30
+  totalsales= ar15sales+ ar308sales+tac9sales+blank80
+  perar15=round(sum(ar15sales)*100/sum(totalsales))
+  perar308=round(sum(ar308sales)*100/sum(totalsales))
+  pertac9=round(sum(tac9sales)*100/sum(totalsales))
+  per80=round(sum(blank80)*100/sum(totalsales))
+
+  return render_template('salessplits.html', ar15sales=sum(ar15sales), ar308sales=sum(ar308sales), tac9sales=sum(tac9sales), blank80=sum(blank80), 
+                          totalsales=sum(totalsales), perar15=perar15, perar308=perar308, pertac9=pertac9, per80=per80)
+
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5000, debug=True)
  

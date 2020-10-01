@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block bodyblock %}
+<div class="columns">
+  <div class="column is-one-third">
+    
+    <ul>
+        <h4>30 Day Sales Totals</h4>
+        <li>AR15 Sales : {{ar15sales}} </li>
+        <li>AR308 Sales : {{ar308sales}}</li>
+        <li>TAC 9 Sales : {{tac9sales}}</li>
+        <li>80% Sales : {{blank80}}</li>
+        <li>Total Sales : {{totalsales}}</li>
+      
+    </ul>
+  </div>
+  <div class="column">
+    <ul>
+        <h4>30 Day Daily Sales Average</h4>
+        <li>Percentage AR15 Sales : {{perar15}}%</li>
+        <li>Percentage AR308 : {{perar308}}%</li>
+        <li>Percentage TAC9 : {{pertac9}}%</li>
+        <li>Percentage AR15 80% : {{per80}}%</li>
+        
+    </ul>
+    </div>
+  
+</div>
+
+{% endblock %}
