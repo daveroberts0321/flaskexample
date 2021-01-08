@@ -176,6 +176,7 @@ def consumables():
   kit30830= sum(salesdata.KIT308[-30:])
   buffer30830= sum(salesdata.BUFF308[-30:])
   buffer930= sum(salesdata.BUFF9[-30:])
+  
 
 
   return render_template('consumables.html',sernum30=sernum30, brass30=brass30, tac9arm30=tac9arm30, tac9ej30=tac9ej30, tac9but30=tac9but30,
